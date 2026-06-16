@@ -1,0 +1,11 @@
+# Danh sách proxy (1 dòng = 1 proxy)
+# Format hỗ trợ:
+#   http://host:port
+#   http://user:pass@host:port
+#   socks5://host:port
+#   socks5://user:pass@host:port
+#
+# Ví dụ:
+# http://103.152.112.120:8080
+# http://admin:password@proxy.example.com:3128
+# socks5://127.0.0.1:1080

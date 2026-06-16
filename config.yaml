@@ -1,0 +1,26 @@
+# Cấu hình Autocaller v2.0
+
+general:
+  max_count: 200              # Giới hạn số vòng lặp tối đa
+  delay_between_services: 1.0 # Delay giữa mỗi service (giây)
+  delay_between_rounds: 5.0   # Delay giữa các vòng lặp
+  randomize_order: true       # Random thứ tự gọi service
+
+threading:
+  max_workers: 10             # Số thread tối đa
+
+http:
+  timeout: 15                 # Request timeout (giây)
+  verify_ssl: false           # Verify SSL certificate
+  retry_count: 2              # Số lần retry khi thất bại
+  retry_backoff: 1.5          # Hệ số backoff (1.5x mỗi lần)
+
+proxy:
+  enabled: false
+  file: "proxies.txt"         # File chứa danh sách proxy
+  rotate: true                # Xoay vòng proxy
+
+logging:
+  level: "INFO"               # DEBUG | INFO | WARNING | ERROR
+  file_enabled: true
+  file_dir: "logs"
